@@ -12,10 +12,10 @@
 //the use of closure will help us to get the expected output even by using 'var'keyword.
 function timer() {
     for (var i = 1; i <= 10; i++) {
-        function close(i) {
+        function close(x) {
             setTimeout(function () {
-                console.log(i);
-            }, i * 1000);
+                console.log(x);
+            }, x * 1000);
         }
         close(i);
     }
